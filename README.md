@@ -13,8 +13,8 @@ This project integrates **Google Gemini LLM** with **Grafana V12.4** using **Lit
    ```bash
    docker-compose up -d
 
+## Components
 
-##Components
-Grafana V12.4: Built-in LLM Plugin enabled.
-
-LiteLLM: Acts as an OpenAI-compatible gateway for Gemini.
+- **Grafana V12.4**: Built-in LLM Plugin enabled.
+- **LiteLLM**: Acts as an OpenAI-compatible gateway for Gemini.
+- **Gemini Pro**: The underlying LLM providing the intelligence.

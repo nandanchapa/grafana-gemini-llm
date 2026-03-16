@@ -25,6 +25,16 @@ This project integrates **Google Gemini LLM** with **Grafana V12.4** using **Lit
 3. **Deploy:** ```bash
    docker-compose up -d
 
+## 📡 Data Flow
+
+1. **User Prompt**: User enters a query in Grafana.
+2. **API Request**: Grafana sends an OpenAI-compatible POST request to LiteLLM.
+3. **Database Logging**: LiteLLM logs the request metadata in **PostgreSQL**.
+4. **Model Translation**: LiteLLM converts the request to the **Google Gemini** schema.
+5. **Inference**: Google Gemini processes the prompt and returns the text.
+6. **Visualization**: Grafana displays the AI response to the user.
+
+
 ## 🏗️ Architecture
 
 ```mermaid
@@ -42,12 +52,3 @@ graph TD
     style L fill:#5af,stroke:#333
     style P fill:#4b8,stroke:#333
     style Gemini fill:#fff,stroke:#4285F4,stroke-width:2px
-
-## 📡 Data Flow
-
-1. **User Prompt**: User clicks the AI Sparkle Icon in Grafana.
-2. **API Request**: Grafana sends an OpenAI-compatible POST request to LiteLLM.
-3. **Database Logging**: LiteLLM logs the request metadata in **PostgreSQL**.
-4. **Model Translation**: LiteLLM converts the request to the **Google Gemini** schema.
-5. **Inference**: Google Gemini processes the prompt and returns the text.
-6. **Visualization**: Grafana displays the AI response to the user.

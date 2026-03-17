@@ -52,3 +52,11 @@ graph TD
     style L fill:#5af,stroke:#333
     style P fill:#4b8,stroke:#333
     style Gemini fill:#fff,stroke:#4285F4,stroke-width:2px
+
+### 📸 LiteLLM API Verification
+
+#### 1. Request Metadata (PostgreSQL Log)
+![LiteLLM Call 1](./images/LiteLLM_API_Call_GeminiLLM_1.png)
+
+#### 2. Gemini Translation Response
+![LiteLLM Call 2](./images/LiteLLM_API_Call_GeminiLLM_2.png)

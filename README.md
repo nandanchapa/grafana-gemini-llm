@@ -22,7 +22,8 @@ This project integrates **Google Gemini LLM** with **Grafana V12.4** using **Lit
 
 1. **Clone the Repo**
 2. **Configure Environment:** Create a `.env` file with your `GEMINI_API_KEY`.
-3. **Deploy:** ```bash
+3. **Configure Postgres Environment:** Add PostgreSQL credentials and schema to `.env` file.
+4. **Deploy:** ```bash
    docker-compose up -d
 
 ## 📡 Data Flow
